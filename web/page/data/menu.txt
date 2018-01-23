@@ -1,0 +1,4 @@
+[
+        {id: "projectManager", text: "科研项目管理"},
+        {id: "apply", pid: "projectManager", text: "申报与评审", url: "/page/home.jsp"}
+]

@@ -1,0 +1,7 @@
+### Maven template
+target/
+.idea/
+
+### macOS template
+# General
+.DS_Store

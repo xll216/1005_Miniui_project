@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+    "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+    <constant name="struts.objectFactory" value="spring"/>
+    <constant name="struts.devMode" value="true"/>
+
+    <package name="main" extends="json-default">
+
+        <action name="searchClazz"
+                class="clazzAction"
+                method="searchClazz">
+            <result name="success" type="json">
+                <param name="root">baseResult</param>
+            </result>
+        </action>
+
+        <action name="searchStudent"
+                class="studentAction"
+                method="searchStudent">
+            <result name="success" type="json">
+                <param name="root">baseResult</param>
+            </result>
+        </action>
+
+        <action name="fileUpload"
+                class="studentAction"
+                method="fileUpload">
+            <result name="success" type="json">
+                <param name="root">FdataFileName</param>
+            </result>
+        </action>
+    </package>
+
+
+</struts>
